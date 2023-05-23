@@ -1,0 +1,87 @@
+/*set varibales*/
+:root {
+    --main-bg-color: black;
+    --main-bt-color: lightgreen;
+}
+/*#00ff00*/
+
+
+
+/*navbar*/
+nav{
+    background-color: var(--main-bg-color);
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+/*div inside navbar*/
+.navbarLinks{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 50%;
+    height: 100%;
+}
+
+/*ul tag inside div*/
+.navbarLinks ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: auto;
+    height: auto;
+}
+
+/*li tag inside ul*/
+.navbarLinks li{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: auto;
+    margin-top: 2%;
+    margin-right: 40px;
+    height: 100%;
+}
+
+/*Links inside navbar divs*/
+.navbarLinks li a{
+    color: lightgray;
+    font-size: 20px;
+    text-decoration: none;
+    width: auto;
+}
+
+/*Set active link*/
+.navbarLinks li a.active{
+    color: var(--main-bt-color);
+    border-bottom: 2px solid var(--main-bt-color) ;
+    margin-bottom: 1px;
+
+}
+
+/*Set hover effects on links*/
+.inactive::after{
+    display:block;
+    content: '';
+    background-color: var(--main-bt-color);
+    border-bottom: solid 3px var(--main-bt-color);
+    transform: scaleX(0);
+    transition: transform 500ms ease-in-out;
+}
+
+.inactive:hover{
+    color: var(--main-bt-color);
+}
+
+.inactive:hover::after{
+    transform: scaleX(1);
+}
+
+
+
+
+
+
