@@ -1,12 +1,21 @@
 <div th:fragment = "navbarUse">
-  <nav>
-    <div class="navbarLinks">
-      <ul>
-        <li><a href="#" th:class="@{active}">Placeholder</a></li>
-        <li><a href="" th:class="@{inactive}" >Placeholder</a></li>
-        <li><a href="#" th:class="@{inactive}"  >Placeholder</a></li>
-      </ul>
 
-    </div>
-  </nav>
+  <div class="navbar-wrapper">
+    <input type="checkbox" id="navbar-checkbox" class="navbar-checkbox">
+    <label for="navbar-checkbox" class="navbar-toggle">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </label>
+    <nav>
+      <div class="navbarLinks">
+        <ul>
+          <li><a href="#" th:class="@{active}">About Me</a></li>
+          <li><a href="" th:class="@{inactive}">Projects</a></li>
+          <li><a href="#" th:class="@{inactive}">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
 </div>

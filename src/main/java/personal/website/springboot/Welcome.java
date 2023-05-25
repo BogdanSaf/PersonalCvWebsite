@@ -9,7 +9,7 @@ public class Welcome {
 
     @GetMapping("/")
     public ModelAndView welcome() {
-        ModelAndView mav = new ModelAndView("BasePage");
+        ModelAndView mav = new ModelAndView("AboutMe");
         mav.addObject("title", "Welcome to my website!");
         return mav;
     }

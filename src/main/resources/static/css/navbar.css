@@ -3,12 +3,9 @@
     --main-bg-color: black;
     --main-bt-color: lightgreen;
 }
-/*#00ff00*/
-
-
 
 /*navbar*/
-nav{
+nav {
     background-color: var(--main-bg-color);
     display: flex;
     height: 50px;
@@ -18,7 +15,7 @@ nav{
 }
 
 /*div inside navbar*/
-.navbarLinks{
+.navbarLinks {
     display: flex;
     justify-content: space-around;
     list-style: none;
@@ -27,7 +24,7 @@ nav{
 }
 
 /*ul tag inside div*/
-.navbarLinks ul{
+.navbarLinks ul {
     display: flex;
     justify-content: space-around;
     list-style: none;
@@ -36,7 +33,7 @@ nav{
 }
 
 /*li tag inside ul*/
-.navbarLinks li{
+.navbarLinks li {
     display: flex;
     justify-content: space-around;
     list-style: none;
@@ -47,7 +44,7 @@ nav{
 }
 
 /*Links inside navbar divs*/
-.navbarLinks li a{
+.navbarLinks li a {
     color: lightgray;
     font-size: 20px;
     text-decoration: none;
@@ -55,16 +52,16 @@ nav{
 }
 
 /*Set active link*/
-.navbarLinks li a.active{
+.navbarLinks li a.active {
     color: var(--main-bt-color);
-    border-bottom: 2px solid var(--main-bt-color) ;
+    border-bottom: 2px solid var(--main-bt-color);
     margin-bottom: 1px;
 
 }
 
 /*Set hover effects on links*/
-.inactive::after{
-    display:block;
+.inactive::after {
+    display: block;
     content: '';
     background-color: var(--main-bt-color);
     border-bottom: solid 3px var(--main-bt-color);
@@ -72,14 +69,99 @@ nav{
     transition: transform 500ms ease-in-out;
 }
 
-.inactive:hover{
+.inactive:hover {
     color: var(--main-bt-color);
 }
 
-.inactive:hover::after{
+.inactive:hover::after {
     transform: scaleX(1);
 }
 
+/*Set navbar-checkbox to not display*/
+.navbar-checkbox {
+    display: none;
+}
+
+/*For displays less than 600px*/
+@media (max-width: 830px) {
+
+    .icon-x {
+        opacity: 0;
+    }
+
+    .navbar-checkbox:not(:checked) ~ nav {
+        display: none;
+    }
+
+    .navbar-checkbox:checked ~ nav {
+        display: block;
+    }
+
+    .navbar-toggle {
+        display: block;
+        cursor: pointer;
+        padding: 10px;
+        background-color: var(--main-bg-color);
+
+
+    }
+
+    .navbar-toggle .icon-bar {
+        display: block;
+        width: 22px;
+        height: 2px;
+        border-radius: 1px;
+        margin: 4px 0;
+        background-color: #ccc;
+    }
+
+    .navbar-toggle .icon-bar:first-child {
+        margin-top: 0;
+    }
+
+    .navbar-toggle .icon-bar:last-child {
+        margin-bottom: 0;
+    }
+
+    .navbar-checkbox:checked ~ .navbar-toggle .icon-bar:nth-child(1) {
+        display: none;
+    }
+
+    .navbar-checkbox:checked ~ .navbar-toggle .icon-bar:nth-child(3) {
+        display: none;
+    }
+
+    nav {
+        width: 100%;
+        height: auto;
+    }
+
+    .navbarLinks {
+        width: 100%;
+        height: auto;
+    }
+
+    /*Center li */
+    .navbarLinks ul {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+
+    }
+
+    .navbarLinks li {
+        height: auto;
+        width: 30%;
+        display: block;
+        margin: 0;
+        text-align: center;
+
+    }
+
+
+}
 
 
 
