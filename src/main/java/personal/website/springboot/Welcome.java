@@ -10,7 +10,21 @@ public class Welcome {
     @GetMapping("/")
     public ModelAndView welcome() {
         ModelAndView mav = new ModelAndView("AboutMe");
-        mav.addObject("title", "Welcome to my website!");
+        mav.addObject("title", "About Me");
+        return mav;
+    }
+
+    @GetMapping("/Projects")
+    public ModelAndView projects() {
+        ModelAndView mav = new ModelAndView("Projects");
+        mav.addObject("title", "Projects");
+        return mav;
+    }
+
+    @GetMapping("/ContactMe")
+    public ModelAndView contactMe() {
+        ModelAndView mav = new ModelAndView("ContactMe");
+        mav.addObject("title", "Contact Me");
         return mav;
     }
 }

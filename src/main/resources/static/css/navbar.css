@@ -1,12 +1,6 @@
-/*set varibales*/
-:root {
-    --main-bg-color: black;
-    --main-bt-color: lightgreen;
-}
-
 /*navbar*/
 nav {
-    background-color: var(--main-bg-color);
+    background-color: var(--main-common-bg-color);
     display: flex;
     height: 50px;
     justify-content: center;

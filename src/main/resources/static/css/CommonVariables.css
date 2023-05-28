@@ -1,0 +1,10 @@
+/*set varibales*/
+:root {
+    --main-bg-color: white;
+    --main-common-bg-color: black;
+    --main-bt-color: lightgreen;
+}
+
+body {
+    background-color: var(--main-bg-color);
+}

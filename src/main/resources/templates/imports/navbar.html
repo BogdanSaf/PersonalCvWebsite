@@ -10,9 +10,9 @@
     <nav>
       <div class="navbarLinks">
         <ul>
-          <li><a href="#" th:class="@{active}">About Me</a></li>
-          <li><a href="" th:class="@{inactive}">Projects</a></li>
-          <li><a href="#" th:class="@{inactive}">Contact Me</a></li>
+          <li><a th:href="@{/}" th:class="${title == 'About Me'} ? 'active' : 'inactive'">About Me</a></li>
+          <li><a th:href="@{Projects}" th:class="${title == 'Projects'} ? 'active' : 'inactive'">Projects</a></li>
+          <li><a th:href="@{ContactMe}" th:class="${title == 'Contact Me'} ? 'active' : 'inactive'">Contact Me</a></li>
         </ul>
       </div>
     </nav>
