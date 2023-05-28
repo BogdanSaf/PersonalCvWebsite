@@ -1,8 +1,18 @@
 /*set varibales*/
 :root {
-    --main-bg-color: white;
+    /*Main background color*/
+    --main-bg-color: #090909;
+
+    /*Main common items(navbar) background color*/
     --main-common-bg-color: black;
+
+    /*Main button color*/
     --main-bt-color: lightgreen;
+
+    /*Main text color*/
+    --main-text-color: white;
+
+
 }
 
 body {

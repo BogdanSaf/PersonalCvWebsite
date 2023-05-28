@@ -1,0 +1,150 @@
+/*Set up container*/
+.container{
+    width: 90%;
+    margin-top: 5%;
+    padding: 50px;
+    background-color: var(--main-bg-color);
+    border-radius: 25px;
+    border: 2px solid #000000;
+    color: #000000;
+}
+
+/*Set up container header*/
+.containerHeader{
+    display: flex;
+    flex-direction: row;
+}
+/*MyName div*/
+.MyName{
+    background-color: var(--main-bg-color);
+    font-weight: bold;
+    width: 40%;
+    margin-top: 13px;
+}
+.MyName h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--main-text-color);
+}
+
+.MyName p{
+    color: var(--main-text-color);
+}
+
+/*MyPurpose Div*/
+.MyPurpose{
+    margin-top: 30px;
+    background-color: var(--main-bg-color);
+    width: 60%;
+    margin-bottom: 0;
+    height: auto;
+    text-align: center;
+}
+
+.MyPurpose p{
+    margin-bottom: 0;
+    color: var(--main-text-color);
+}
+
+/*Container Body*/
+.containerBody{
+    background-color: var(--main-bg-color);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+/*Left side of container body*/
+.containerBodyLeft{
+    /*background-color: var(--main-common-bg-color);*/
+    width: 40%;
+}
+
+/*Skills Section DIv*/
+.SkillsSection{
+    display: flex;
+    flex-direction: column;
+}
+
+/*Name inside of it*/
+.sectionName{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.sectionName h2{
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--main-text-color)
+}
+
+/*Skills*/
+.skill{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.skill h5{
+    font-size: 20px;
+    width: 50%;
+    padding-left: 30px;
+    color: var(--main-text-color);
+}
+.SkillProgress{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: lightgray;
+}
+
+.SkillProgress span{
+    margin-top: 5px;
+}
+
+.SkillProgress .checked{
+    color: yellow;
+}
+
+/*Right Side of Body Container*/
+.containerBodyRight{
+    width: 60%;
+}
+
+/*Education Container*/
+.EducationContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.educationBody{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.educationYear{
+    width: 30%;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.educationYear h4{
+    color: var(--main-text-color);
+}
+
+.educationDetails{
+    width: 70%;
+    text-align: left;
+    color: var(--main-text-color);
+    margin-top: 15px;
+}
+
+.instituteName a{
+    text-decoration: none;
+    color: var(--main-bt-color);
+}
