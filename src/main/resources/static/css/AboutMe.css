@@ -25,10 +25,12 @@
     font-size: 50px;
     font-weight: bold;
     color: var(--main-text-color);
+    padding-left: 30px;
 }
 
 .MyName p{
     color: var(--main-text-color);
+    padding-left: 30px;
 }
 
 /*MyPurpose Div*/
@@ -147,4 +149,86 @@
 .instituteName a{
     text-decoration: none;
     color: var(--main-bt-color);
+}
+@media (max-width: 830px) {
+    .container{
+        width:90%
+    }
+    .containerHeader{
+        flex-direction: column;
+    }
+
+    .MyName{
+        width: 100%;
+    }
+
+    .MyPurpose{
+        width: 100%;
+    }
+
+    .containerBody{
+        flex-direction: column;
+    }
+
+    .containerBodyLeft{
+        width: 100%;
+    }
+
+    .SkillsSection{
+        width: 100%;
+    }
+
+    .sectionBody{
+        width: 100%;
+    }
+
+    .skill{
+        flex-direction: column;
+        width: 100%;
+        margin-top: 30px;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    .skill h5{
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .skillProgress{
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .containerBodyRight{
+        width: 100%;
+    }
+
+    .educationBody{
+        flex-direction: column;
+    }
+
+    .educationYear{
+        width: 100%;
+        text-align: center;
+    }
+
+    .educationYear h4{
+        margin-top: 30px;
+    }
+
+    .educationDetails{
+        width: 100%;
+        text-align: center;
+    }
+
+    .instituteName h6{
+        margin-top: 15px;
+    }
+
+    .moduleList li{
+        margin-top: 8px;
+    }
 }

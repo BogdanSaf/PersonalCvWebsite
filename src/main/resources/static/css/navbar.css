@@ -76,7 +76,7 @@ nav {
     display: none;
 }
 
-/*For displays less than 600px*/
+/*For displays less than 830px*/
 @media (max-width: 830px) {
 
     .icon-x {
