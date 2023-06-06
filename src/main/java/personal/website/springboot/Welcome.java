@@ -14,13 +14,6 @@ public class Welcome {
         return mav;
     }
 
-    @GetMapping("/Projects")
-    public ModelAndView projects() {
-        ModelAndView mav = new ModelAndView("Projects");
-        mav.addObject("title", "Projects");
-        return mav;
-    }
-
     @GetMapping("/ContactMe")
     public ModelAndView contactMe() {
         ModelAndView mav = new ModelAndView("ContactMe");
